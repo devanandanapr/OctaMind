@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure API (using Streamlit secrets)
-genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+genai.configure(api_key=st.secrets["API_KEY"])
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 # App title and description
